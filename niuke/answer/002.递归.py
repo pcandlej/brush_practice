@@ -1,11 +1,11 @@
-def dv(l, r, t, o):
-    power = pow(t, 3)
-    if round(power, 4) == round(o, 4):
-        return round(t, 1)
-    elif power > o:
-        return dv(l, t, (t + l) / 2, o)
+def dv(lt, rt, md, tg):
+    power = md * md * md
+    if round(power, 4) == round(tg, 4):
+        return round(md, 1)
+    elif power > tg:
+        return dv(lt, md, (md + lt) / 2, tg)
     else:
-        return dv(t, r, (t + r) / 2, o)
+        return dv(md, rt, (md + rt) / 2, tg)
 
 
 def getCubeRoot(input):
