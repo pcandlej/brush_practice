@@ -1,7 +1,6 @@
 if __name__ == '__main__':
-    print("abcd".count("d"))
-    print([1, 2, 3, 3, 4].count(3))
-    print(set("abdcccc"))
+    for i in range(1, 2):
+        print('abcd')
 
 # from collections import defaultdict
 #
