@@ -1,5 +1,14 @@
 if __name__ == '__main__':
-    print("123"[-2:])
+    print(
+        len(
+            list(
+                filter(
+                    lambda c: str(c ** 2).endswith(str(c)),
+                    range(int(input()))
+                )
+            )
+        )
+    )
 
 # from collections import defaultdict
 #
