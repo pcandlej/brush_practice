@@ -1,6 +1,5 @@
 if __name__ == '__main__':
-    for i in range(1, 2):
-        print('abcd')
+    print("123"[-2:])
 
 # from collections import defaultdict
 #
