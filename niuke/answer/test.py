@@ -1,14 +1,11 @@
+import re
+
 if __name__ == '__main__':
-    print(
-        len(
-            list(
-                filter(
-                    lambda c: str(c ** 2).endswith(str(c)),
-                    range(int(input()))
-                )
-            )
-        )
-    )
+    while True:
+        try:
+            print(re.sub("\d+", lambda x: "*%s*" % x.group(0), input()))
+        except:
+            break
 
 # from collections import defaultdict
 #
